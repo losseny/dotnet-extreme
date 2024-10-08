@@ -1,0 +1,29 @@
+﻿services:
+  presentation:
+    image: asp-website-i
+    container_name: presentation
+    build:
+      context: src
+      dockerfile: Presentation/Dockerfile
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=database; Database=reservering-database; Port=5432; Username=admin; Password=admin"
+    ports:
+      - "5000:5000"
+    networks:
+      - reservering-local-network
+  database:
+    image: postgres:14.7-alpine
+    container_name: database
+    env_file:
+      - postgres.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - database-local-data:/var/lib/postgresql/data
+    networks:
+      - reservering-local-network
+
+networks:
+  reservering-local-network:
+volumes:
+  database-local-data:

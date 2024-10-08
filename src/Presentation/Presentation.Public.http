@@ -1,0 +1,7 @@
+### Simple Ping Test
+GET {{Presentation_HostAddress}}/public/ping
+Accept: text/plain
+
+### Seed Data
+POST {{Presentation_HostAddress}}/public/seed
+Accept: application/json

@@ -1,0 +1,15 @@
+### Create reservation
+POST {{Presentation_HostAddress}}/room/729817d5-42e1-49c6-8585-046301902764/reservation
+Content-Type: application/json
+Accept: application/json
+
+{
+  "reservationDate": {
+    "date": "2026-10-28"
+  },
+  "period": {
+    "start": "13:00",
+    "end": "16:00"
+  },
+  "bookerId": "6819ad9b-8518-4bb7-b34e-70cf7c3789a5"
+}

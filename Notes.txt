@@ -1,0 +1,5 @@
+De reden voor bi-directionele relatie tussen room en reservering is,
+omdat het makkelijk is om vanuit reservering een roster op te stellen voor een student.
+Wil je dat via room doen,
+moet je alle rooms gaan queryen opzoek naar een reservering voor booker of studygroup waar sudent bij hoort.
+Voor het aanmaken van een reservering is het wel makkelijker om de commands via rooms te doen.

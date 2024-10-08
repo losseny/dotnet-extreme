@@ -1,0 +1,10 @@
+### Variables
+@week_number = 43
+
+### Get roster by week
+GET {{Presentation_HostAddress}}/reservation/roster?week={{week_number}}
+Accept: application/json
+
+### Get reservation by id
+GET {{Presentation_HostAddress}}/reservation/5980544c-328b-460e-8572-e8365423a79c
+Accept: application/json
